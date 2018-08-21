@@ -13,6 +13,15 @@ function max(numbers) {
 
 function min(numbers) {
   // your code here
+  let minNum = numbers[0];
+  let i = 0;
+  while (i < numbers.length) {
+    if (numbers[i] < minNum) {
+      minNum = numbers[i];
+    }
+    i++;
+  }
+  return minNum;
 }
 
 /* From here down, you are not expected to
